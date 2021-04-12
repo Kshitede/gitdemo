@@ -10,7 +10,7 @@ public class OrderOfExe {
         list.add(i);
         list.stream().forEach(System.out::println);
         list.stream().forEach(x->System.out.println(Thread.currentThread().getName() + " " + x));
-        System.out.println("changed parallel");
+        System.out.println("The changed parallel");
         list.stream().parallel().forEach(System.out::println);
         list.stream().parallel().forEach(x->System.out.println(Thread.currentThread().getName() + " " + x));
     }
